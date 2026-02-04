@@ -1,8 +1,8 @@
 # Personal Details
 
-Ken Kristoffer F. Enrile
-BS Computer Science
-https://cmsc100-laboratory.github.io/02-my-github-page-kfenrile/
+Ken Kristoffer F. Enrile  
+BS Computer Science  
+https://cmsc100-laboratory.github.io/02-my-github-page-kfenrile/  
 
 **Steps on how to create GitHub page?**
 
