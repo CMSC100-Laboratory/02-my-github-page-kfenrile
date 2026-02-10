@@ -130,7 +130,7 @@ body {
 
 .project {
     flex: 1;
-    min-height: 150px;
+    min-height: 200px;
     background: #1A1A1A;
     border-radius: 12px;
     position: relative;
