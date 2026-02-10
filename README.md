@@ -13,7 +13,7 @@ Firstly, create a repository named after your username then .github.io (ex: haha
    
 
 
-**What are your key takeaways from this exercise?**
+**What are your key takeaways from this exercise?**  
 After experiencing what it feels to make a website from scratch since I've started using react, it is a wake up call for me.  
 It felt like im building a house brick by brick when im making it from scratch and it is a humbling experience coding each HTML tag and adding CSS to them.  
 
