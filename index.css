@@ -8,10 +8,15 @@
 
 body {
     background: #0E0E0E;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #main-container {
+    flex: 1;
     display: flex;
+    flex-direction: row;
     gap: 20px;
     padding: 30px;
 }
@@ -35,16 +40,16 @@ body {
     background: #101010;
     border-radius: 16px;
     padding: 20px;
-
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 /*left column shit*/
 #picture {
-    height: 180px;
+    align-items: center;
+    justify-content: center;
 }
+
 
 #picture-img {
     width: 180px;
@@ -111,19 +116,54 @@ body {
     line-height: 1.6;
 }
 
-#projects-container {
-    padding-top: 30px;
+#project-container {
+    height: auto;
+    padding-top: 45px;
 }
 
-#projects-row {
+#projects-col {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .project {
-    width: 120px;
-    height: 120px;
+    flex: 1;
+    min-height: 150px;
     background: #1A1A1A;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(146, 101, 166, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-5px); 
+    border-color: #bf82d9;
+}
+
+.project-overlay {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.project-overlay h4 {
+    margin-bottom: 4px;
+    border-bottom: none;
+    font-size: 14px;
+}
+
+.project-overlay p {
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.7;
 }
 
 /*footer*/
