@@ -92,7 +92,23 @@ body {
 
 /*right column shit*/
 #autobiography {
-    height: 180px;
+    height: auto;
+    min-height: 180px;
+    padding: 30px 45px;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+#bio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+#autobiography p {
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 #projects-container {
@@ -171,11 +187,11 @@ h4 {
     top: -12px;
     left: 20px;
 
-    background: #0E0E0E;
+    background: #101010;
     color: #9265A6;
 
     padding: 4px 12px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
