@@ -19,15 +19,15 @@ body {
 #left-column {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 20px;
-    width: 220px;
 }
 
 #right-column {
     display: flex;
     flex-direction: column;
-    flex: 1;
-     gap: 20px;
+    flex: 5;
+    gap: 20px;
 }
 
 .card {
@@ -48,8 +48,6 @@ body {
 #skills {
     height: 280px;
 }
-
-
 
 #autobiography {
     height: 180px;
