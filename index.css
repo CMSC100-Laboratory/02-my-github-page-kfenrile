@@ -1,3 +1,4 @@
+/*containers*/
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,6 @@
 
 body {
     background: #0E0E0E;
-    color: #FFFFFF;
 }
 
 #main-container {
@@ -41,14 +41,56 @@ body {
     justify-content: center;
 }
 
+/*left column shit*/
 #picture {
     height: 180px;
 }
 
-#skills {
-    height: 280px;
+#picture-img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
+#skills {
+    height: auto;
+    min-height: 280px;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+#skills-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    position: relative;
+    padding-left: 12px;
+    font-size: 13px;
+}
+
+/*susyal na dot*/
+.skill-category li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #bf82d9; 
+}
+
+/*right column shit*/
 #autobiography {
     height: 180px;
 }
@@ -68,28 +110,11 @@ body {
     background: #1A1A1A;
 }
 
-p {
-    font-weight: 300;
-    opacity: 0.9;
-}
-
-.label {
-    position: absolute;
-    top: -12px;
-    left: 20px;
-
-    background: #0E0E0E;
-    padding: 4px 12px;
-
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
+/*footer*/
 #footer-container {
     margin: 0 30px 30px;
     padding: 20px 30px;
-    background: #141414;
+    background: #101010;
     justify-content: flex-start;
 }
 
@@ -104,22 +129,53 @@ p {
     height: 100px;
     object-fit: cover;
     border-radius: 12px;
-    background: #1A1A1A;
 }
 
 #footer-text p {
     font-size: 14px;
-    opacity: 0.85;
 }
 
-.footer-name {
+#footer-name {
     font-size: 16px;
     font-weight: 600;
     opacity: 1;
 }
 
-.footer-copyright {
+#footer-copyright {
     margin-top: 6px;
     font-size: 12px;
     opacity: 0.6;
+}
+
+/*text*/
+p, li {
+    color: #F2f2f2;
+    font-weight: 300;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+h4 {
+    color: #bf82d9;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(191, 130, 217, 0.2);
+    padding-bottom: 4px;
+}
+
+.label {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+
+    background: #0E0E0E;
+    color: #9265A6;
+
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
